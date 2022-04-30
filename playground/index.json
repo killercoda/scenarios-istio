@@ -1,5 +1,5 @@
 {
-  "title": "A Playground",
+  "title": "Playground",
   "description": "This playground has Istio installed on Kubernetes",
   "details": {
       "steps": [
@@ -20,7 +20,8 @@
       "host01": [
         {"file": "init.sh", "target": "/ks", "chmod": "+x"},
         {"file": "k8s.sh", "target": "/ks", "chmod": "+x"},
-        {"file": "wait-init.sh", "target": "/ks", "chmod": "+x"}
+        {"file": "wait-init.sh", "target": "/ks", "chmod": "+x"},
+        {"file": "demo.yaml", "target": "/tmp", "chmod": "+x"}
       ]
     }
   },
