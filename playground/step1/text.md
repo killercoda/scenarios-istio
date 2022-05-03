@@ -9,6 +9,12 @@ Check the installed version:
 istioctl version
 ```{{exec}}
 
+Now we can enable the Istio sidecar injection for the `default` *Namespace*:
+
+```plain
+kubectl label namespace default istio-injection=enabled --overwrite
+```{{exec}}
+
 Next we install the [helloworld example](https://github.com/istio/istio/tree/master/samples/helloworld):
 
 ```plain

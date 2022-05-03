@@ -9,7 +9,7 @@
       }
     ],
     "finish": {
-      "text": "finish.md"
+      "text": "finish/finish.md"
     },
     "intro": {
       "text": "init/init.md",
@@ -18,9 +18,7 @@
     },
     "assets": {
       "host01": [
-        {"file": "init.sh", "target": "/ks", "chmod": "+x"},
-        {"file": "k8s.sh", "target": "/ks", "chmod": "+x"},
-        {"file": "wait-init.sh", "target": "/ks", "chmod": "+x"},
+        {"file": "wait-background.sh", "target": "/ks", "chmod": "+x"},
         {"file": "demo.yaml", "target": "/tmp", "chmod": "+x"}
       ]
     }
