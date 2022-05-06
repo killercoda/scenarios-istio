@@ -13,8 +13,8 @@
     },
     "intro": {
       "text": "init/init.md",
-      "courseData": "init/background.sh",
-      "code": "init/foreground.sh"
+      "background": "init/background.sh",
+      "foreground": "init/foreground.sh"
     },
     "assets": {
       "host01": [
