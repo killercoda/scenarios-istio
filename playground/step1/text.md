@@ -22,7 +22,7 @@ And then [ACCESS]({{TRAFFIC_HOST1_1234}}) Istio <small>(or [select the port here
 
 
 ### Install samples
-There are samples to install in `/root/istio-1.13.3/samples`.
+There are samples to install in `/root/istio-1.14.4/samples`.
 
 For guided Istio samples see:
 
