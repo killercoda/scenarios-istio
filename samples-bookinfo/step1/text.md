@@ -23,10 +23,10 @@ kubectl label namespace default istio-injection=enabled --overwrite
 Next we install the [bookinfo sample](https://github.com/istio/istio/tree/master/samples/bookinfo):
 
 ```plain
-kubectl apply -f /root/istio-1.14.4/samples/bookinfo/networking/virtual-service-all-v1.yaml
-kubectl apply -f /root/istio-1.14.4/samples/bookinfo/networking/bookinfo-gateway.yaml
-kubectl apply -f /root/istio-1.14.4/samples/bookinfo/networking/destination-rule-all.yaml
-kubectl apply -f /root/istio-1.14.4/samples/bookinfo/platform/kube/bookinfo.yaml
+kubectl apply -f /root/istio-1.24.1/samples/bookinfo/networking/virtual-service-all-v1.yaml
+kubectl apply -f /root/istio-1.24.1/samples/bookinfo/networking/bookinfo-gateway.yaml
+kubectl apply -f /root/istio-1.24.1/samples/bookinfo/networking/destination-rule-all.yaml
+kubectl apply -f /root/istio-1.24.1/samples/bookinfo/platform/kube/bookinfo.yaml
 kubectl wait deploy --all --for condition=available --timeout=1h
 ```{{exec}}
 
@@ -42,6 +42,6 @@ Finally [ACCESS]({{TRAFFIC_HOST1_1234}}/productpage) the Bookinfo app through Is
 
 
 ### More samples
-There are also more examples to try in `/root/istio-1.14.4/samples`.
+There are also more examples to try in `/root/istio-1.24.1/samples`.
 
 [Helloworld Sample](https://killercoda.com/istio/scenario/samples-helloworld)

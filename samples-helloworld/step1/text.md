@@ -23,8 +23,8 @@ kubectl label namespace default istio-injection=enabled --overwrite
 Next we install the [helloworld sample](https://github.com/istio/istio/tree/master/samples/helloworld):
 
 ```plain
-kubectl apply -f /root/istio-1.14.4/samples/helloworld/helloworld.yaml
-kubectl apply -f /root/istio-1.14.4/samples/helloworld/helloworld-gateway.yaml
+kubectl apply -f /root/istio-1.24.1/samples/helloworld/helloworld.yaml
+kubectl apply -f /root/istio-1.24.1/samples/helloworld/helloworld-gateway.yaml
 kubectl wait deploy --all --for condition=available --timeout=1h
 ```{{exec}}
 
@@ -40,6 +40,6 @@ Finally [ACCESS]({{TRAFFIC_HOST1_1234}}/hello) the Helloworld app through Istio 
 
 
 ### More samples
-There are also more examples to try in `/root/istio-1.14.4/samples`.
+There are also more examples to try in `/root/istio-1.24.1/samples`.
 
 [Bookinfo Sample](https://killercoda.com/istio/scenario/samples-bookinfo)
