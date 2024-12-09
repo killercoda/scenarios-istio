@@ -1,0 +1,31 @@
+apiVersion: install.istio.io/v1alpha1
+kind: IstioOperator
+spec:
+  components:
+    cni:
+      enabled: true
+      k8s:
+        resources:
+          requests:
+            cpu: 0m
+            memory: 0Mi
+    ztunnel:
+      enabled: true
+      k8s:
+        resources:
+          requests:
+            cpu: 0m
+            memory: 0Mi
+    ingressGateways:
+      - enabled: false
+    pilot:
+      k8s:
+        env:
+          - name: PILOT_TRACE_SAMPLING
+            value: "100"
+        resources:
+          requests:
+            cpu: 0m
+            memory: 0Mi
+  values:
+    profile: ambient
