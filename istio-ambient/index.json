@@ -1,0 +1,29 @@
+{
+  "title": "Istio Ambient Sidecarless",
+  "description": "This playground has Istio Ambient mode installed on Kubernetes",
+  "details": {
+      "steps": [
+      {
+        "title": "Play with Istio Ambient mode",
+        "text": "step1/text.md"
+      }
+    ],
+    "finish": {
+      "text": "finish/finish.md"
+    },
+    "intro": {
+      "text": "init/init.md",
+      "background": "init/background.sh",
+      "foreground": "init/foreground.sh"
+    },
+    "assets": {
+      "host01": [
+        {"file": "wait-background.sh", "target": "/ks", "chmod": "+x"},
+        {"file": "ambient.yaml", "target": "/tmp", "chmod": "+x"}
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
