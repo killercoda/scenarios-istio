@@ -1,6 +1,7 @@
 {
   "items": [
     { "path": "playground" },
+    { "path": "istio-ambient"},
     { "path": "samples-helloworld" },
     { "path": "samples-bookinfo" }
   ]
