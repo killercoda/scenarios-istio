@@ -6,6 +6,10 @@
       {
         "title": "Play with Istio Ambient mode",
         "text": "step1/text.md"
+      },
+      {
+        "title": "Secure and visualize the application",
+        "text": "step2/text.md"
       }
     ],
     "finish": {
