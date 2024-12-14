@@ -10,6 +10,10 @@
       {
         "title": "Secure and visualize the application",
         "text": "step2/text.md"
+      },
+      {
+        "title": "Enforce authorization policies",
+        "text": "step3/text.md"
       }
     ],
     "finish": {
